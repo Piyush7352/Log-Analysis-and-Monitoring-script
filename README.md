@@ -1,10 +1,10 @@
-# Log-Analysis-and-Monitoring-script
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log Monitoring Script</title>
+    
 </head>
 <body>
 
@@ -37,7 +37,20 @@
 
 <h2>4. Signal Handling</h2>
 
-<p>A signal handler function <code>signal_handler(sig, frame)</code> is defined to handle keyboard interrupt (Ctrl+C). It prints a message and exits the script gracefully.</p>
+<p>A signal handler function <code>signal_handler(sig, frame)</code> is defined to handle keyboard interrupt (Ctrl+C). It prints a message and exits the script gracefully.</p> 
+
+<p>Below is the following log output of the http status code while log analysis and log monitoring</p>
+
+<pre>
+=== Summary Report ===
+Last Execution Time: 2024-04-23 22:35:57
+HTTP Status 500: 82 (new: 7)
+HTTP Status 503: 98 (new: 6)
+HTTP Status 404: 85 (new: 7)
+HTTP Status 200: 60 (new: 5)
+
+Logging interrupted. Exiting.
+</pre>
 
 <h2>5. Main Loop</h2>
 
@@ -77,7 +90,7 @@
 <p>To test the script, follow these steps:</p>
 
 <ol>
-    <li>Ensure that the script file <code>log_monitor.py</code> is in the appropriate directory.</li>
+    <li>Ensure that the script file <code>log.py</code> is in the appropriate directory.</li>
     <li>Create a sample log file named <code>my_logfile.log</code> in the same directory as the script.</li>
     <li>Add some sample log entries to the log file manually or by running another process that generates log messages.</li>
     <li>Run the script using the instructions provided in the "How to Use" section.</li>
